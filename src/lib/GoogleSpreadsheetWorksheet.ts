@@ -349,7 +349,7 @@ export class GoogleSpreadsheetWorksheet {
     if (!_.compact(this.headerValues).length) {
       throw new Error('All your header cells are blank - fill the first row with header values before trying to interact with rows');
     }
-    checkForDuplicateHeaders(this.headerValues);
+    // checkForDuplicateHeaders(this.headerValues);
   }
 
   async setHeaderRow(headerValues: string[], headerRowIndex?: number) {
